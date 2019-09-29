@@ -1,3 +1,8 @@
+.userdata {
+  position: relative;
+  margin-top: 20px;
+}
+
 .userdata__header {
   background: lightgray;
   display: flex;

@@ -13,8 +13,8 @@ const UserData = ({ data, dataToEdit }) => {
   const handleEdit = itemId => {
     // only name field is handled in this function
     if (itemId === 'name') {
-      setIsNameHidden(true);
-      setIsFormShown(true);
+      setIsNameHidden(!isNameHidden);
+      setIsFormShown(!isFormShown);
     }
   };
 
@@ -26,7 +26,8 @@ const UserData = ({ data, dataToEdit }) => {
   return (
     <>
       <Row>
-        <Col span={8}>
+        <Col span={6}></Col>
+        <Col span={12} className='userdata'>
           <Typography className='userdata__header'>
             <div>
               <Paragraph className='userdata__header-title'>

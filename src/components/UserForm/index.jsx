@@ -33,9 +33,10 @@ const UserForm = ({ userData, setName, setEmail, close }) => {
   };
 
   return (
-    <Row>
+    <Row className='userform'>
+      <Col span={3}></Col>
       <Col span={8}></Col>
-      <Col span={8}>
+      <Col span={12}>
         <Typography>
           <Paragraph className='userform__header'>
             Имя, телефон, email
@@ -58,10 +59,12 @@ const UserForm = ({ userData, setName, setEmail, close }) => {
           {isNameExpanded && (
             <>
               <Input
+                className='userform__input'
                 value={nameField}
                 onChange={event => setNameField(event.target.value)}
               />
               <Input
+                className='userform__input'
                 value={surnameField}
                 onChange={event => {
                   setSurnameField(event.target.value);
@@ -79,7 +82,11 @@ const UserForm = ({ userData, setName, setEmail, close }) => {
         )}
         <Typography>
           <Paragraph className='userform__title'>
-            EMAIL
+            {!isEmailExpanded ? (
+              <span>EMAIL</span>
+            ) : (
+              <span>ИЗМЕНИТЬ EMAIL</span>
+            )}
             <Icon
               type={isEmailExpanded ? 'up' : 'down'}
               className='userform__icon'
@@ -90,6 +97,7 @@ const UserForm = ({ userData, setName, setEmail, close }) => {
         <Typography>
           {isEmailExpanded && (
             <Input
+              className='userform__input'
               value={emailField}
               onChange={event => setEmailField(event.target.value)}
             />

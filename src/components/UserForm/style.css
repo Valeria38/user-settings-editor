@@ -1,3 +1,9 @@
+.userform {
+  position: absolute;
+  top: -220px;
+  left: -100px;
+}
+
 .userform__header {
   background: #f2f2f2;
   padding: 10px;
@@ -30,4 +36,8 @@
   padding: 10px;
   background: #f2f2f2;
   margin-bottom: 0 !important;
+}
+
+.userform__input {
+  padding: 20px !important;
 }
