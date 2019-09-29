@@ -1,0 +1,33 @@
+.userform__header {
+  background: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 0 !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userform__header span {
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.userform__title {
+  background: lightgray;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0 !important;
+}
+
+.userform__icon {
+  padding-top: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.userform__field {
+  padding: 10px;
+  background: #f2f2f2;
+  margin-bottom: 0 !important;
+}

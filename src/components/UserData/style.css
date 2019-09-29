@@ -1,0 +1,35 @@
+.userdata__header {
+  background: lightgray;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.userdata__header-title {
+  margin-bottom: 0px !important;
+  font-size: 18px;
+}
+
+.userdata__header-text {
+  margin-bottom: 0px !important;
+  font-size: 12px;
+}
+
+.userdata__item {
+  cursor: pointer;
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.userdata__item-info {
+  padding-right: 10px;
+}
+
+.userdata__item-icon {
+  padding-top: 4px;
+}
+
+.hidden {
+  background: #f2f2f2;
+  color: #f2f2f2;
+}
